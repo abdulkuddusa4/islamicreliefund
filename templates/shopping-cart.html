@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Islamicreliefund</title>
+{% endblock title %}
+<link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Prata|Rubik:300,400,500,700&amp;display=swap" rel="stylesheet">
+
+{% block css_links %}
+{{ block.super }}
+<link href="{% static 'css/shop.css' %}" rel="stylesheet">
+{% endblock css_links %}
+
+{% block content %}
+    <!-- Page Title -->
+    <section class="page-title" style="background-image:url({% static 'images/background/bg-13.jpg' %})">
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>Shopping Cart</h1>
+                <ul class="bread-crumb">
+                    <li><a class="home" href="index.html"><span class="fa fa-home"></span></a></li>
+                    <li>Products</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Cart section-->
+    <section class="cart-area">
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <ul class="total-item-info">
+                        <li><span>Your Cart:</span> 3 Items</li>
+                        <li><span>Total :</span> $94.97</li>
+                    </ul>
+                    <div class="table-outer">
+                        <table class="cart-table">
+                            <thead class="cart-header">
+                                <tr>
+                                    <th class="prod-column">Products</th>
+                                    <th class="hide-column"></th>
+                                    <th>Quantity</th>
+                                    <th class="availability">Availability</th>
+                                    <th class="price">Price</th>
+                                    <th>Total</th>
+                                    <th>Remove</th>
+                                </tr>    
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" class="prod-column">
+                                        <div class="column-box">
+                                            <div class="prod-thumb">
+                                                <a href="#"><img src="{% static 'images/shop/product-thumb-1.jpg' %}" alt=""></a>
+                                            </div>
+                                            <div class="title">
+                                                <h3 class="prod-title">Power Remote</h3>
+                                            </div>    
+                                        </div>
+                                    </td>
+                                    <td class="qty">
+                                        <input class="quantity-spinner" type="text" value="2" name="quantity">
+                                    </td>
+                                    <td class="unit-price">
+                                        <div class="available-info">
+                                            <span class="icon fa fa-check thm-bg-clr"></span>Item(s)<br>Avilable Now
+                                        </div>
+                                    </td>
+                                    <td class="price">$34.99</td>
+                                    <td class="sub-total">$69.98</td>
+                                    <td>
+                                        <div class="remove">
+                                            <div class="checkbox">
+                                                <span class="flaticon-cross"></span>
+                                            </div>   
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="prod-column">
+                                        <div class="column-box">
+                                            <div class="prod-thumb">
+                                                <a href="#"><img src="{% static 'images/shop/product-thumb-2.jpg' %}" alt=""></a>
+                                            </div>
+                                            <div class="title">
+                                                <h3 class="prod-title">USB Power Bank</h3>
+                                            </div>    
+                                        </div>
+                                    </td>
+                                    <td class="qty">
+                                        <input class="quantity-spinner" type="text" value="3" name="quantity">
+                                    </td>
+                                    <td class="unit-price">
+                                        <div class="available-info">
+                                            <span class="icon fa fa-check thm-bg-clr"></span>Item(s)<br>Avilable Now
+                                        </div>
+                                    </td>
+                                    <td class="price">$29.99</td>
+                                    <td class="sub-total">$87.97</td>
+                                    <td>
+                                        <div class="remove">
+                                            <div class="checkbox">
+                                                <span class="flaticon-cross"></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>    
+                        </table>
+                    </div>
+                </div>     
+            </div>
+            
+            <div class="row cart-middle">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="apply-coupon">
+                        <input type="text" name="coupon-code" value="" placeholder="Enter Coupon Code...">
+                        <div class="apply-coupon-button">
+                            <button class="theme-btn btn-style-one" type="button"><span>Apply Coupon</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="update-cart pull-right">
+                        <button class="theme-btn btn-style-one" type="button"><span>Update Cart</span></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+{% endblock content %}
+
+{% block js_links %}
+<!-- JS -->
+{{ block.super }}
+<script src="{% static 'js/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock js_links %}

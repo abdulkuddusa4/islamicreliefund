@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Islamicreliefund</title>
+{% endblock title %}
+
+
+
+
+
+<!-- Stylesheets -->
+{% block css_links %}
+{{ block.super }}
+<link href="{% static 'css/shop.css' %}" rel="stylesheet">
+{% endblock css_links %}
+
+
+{% block content %}
+    <!-- Page Title -->
+    <section class="page-title" style="background-image:url({% static 'images/background/bg-13.jpg' %})">
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>My Account</h1>
+                <ul class="bread-crumb">
+                    <li><a class="home" href="index.html"><span class="fa fa-home"></span></a></li>
+                    <li>Products</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Login Register Section-->
+    <section class="login-register-area">
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="form">
+                        <div class="shop-page-title">
+                            <div class="title">Login </div>
+                        </div>
+                        <div class="row">
+                            <form action="#">
+                                <div class="col-xl-12">
+                                    <div class="input-field">
+                                        <input type="text" name="name" placeholder="Your Name *">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </div>
+                                    </div>    
+                                </div> 
+                                <div class="col-xl-12">
+                                    <div class="input-field">
+                                        <input type="text" name="email" placeholder="Enter Mail id *">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="input-field">
+                                        <input type="text" name="password" placeholder="Enter Password">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-sm-12">
+                                            <button class="theme-btn btn-style-one" type="submit"><span>Login</span></button>
+                                            <div class="remember-text">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input name="remember" type="checkbox">
+                                                        <span>Remember Me</span>
+                                                    </label>
+                                                </div>  
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-sm-12">
+                                            <ul class="social-icon">
+                                                <li class="login-with">Or login with</li>
+                                                <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus gplus" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>   
+                                </div> 
+                            </form>    
+                        </div>
+                    </div>    
+                </div>
+                
+                <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                    <div class="form register">
+                        <div class="shop-page-title">
+                            <div class="title">Register</div>
+                        </div>
+                        <div class="row">
+                            <form action="#">
+                                <div class="col-md-12">
+                                    <div class="input-field">
+                                        <input type="text" name="name" placeholder="Your Name *">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </div>
+                                    </div>    
+                                </div> 
+                                <div class="col-md-12">
+                                    <div class="input-field">
+                                        <input type="text" name="email" placeholder="Enter Mail id *">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="input-field">
+                                        <input type="text" name="password" placeholder="Enter Password">
+                                        <div class="icon-holder">
+                                            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-5 col-sm-12">
+                                            <button class="theme-btn btn-style-one" type="submit"><span>Register</span></button>
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-12">
+                                            <div class="right">
+                                                <h6><span>*</span>You must be a free registered user to submit content. </h6>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div> 
+                            </form>    
+                        </div>
+                    </div>    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+<!-- JS -->
+{% block js_links %}
+{{ block.super }}
+
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock js_links %}

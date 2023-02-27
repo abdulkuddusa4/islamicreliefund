@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block title %}
+<title>Islamicreliefund</title>
+{% endblock %}
+
+
+{% block css_links %}
+{{ block.super }}
+{% endblock css_links %}t">
+
+
+{% block content %}
+    <!-- Page Title -->
+    <section class="page-title" style="background-image:url({% static 'images/background/bg-13.jpg' %})">
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>Frequently Asked Questions</h1>
+                <ul class="bread-crumb">
+                    <li><a class="home" href="index.html"><span class="fa fa-home"></span></a></li>
+                    <li>FAQ's</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Faq section-->
+    <section class="faq-section">
+        <div class="auto-container">
+            <div class="faq-content-box">
+                <div class="accordion-box">
+                    <!--Start single accordion box-->
+                    <div class="accordion accordion-block">
+                        <div class="accord-btn"><span class="count"></span><h4>How have you selected your top charities?</h4></div>
+                        <div class="accord-content">
+                            <div class="text">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</div>
+                        </div>
+                    </div>
+                    <!--End single accordion box-->
+                    <!--Start single accordion box-->
+                    <div class="accordion accordion-block active">
+                        <div class="accord-btn"><span class="count"></span><h4>How can I find out where my forfeited charity money went?</h4></div>
+                        <div class="accord-content collapsed">
+                            <div class="text">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</div>
+                        </div>
+                    </div>
+                    <!--End single accordion box-->
+                    <!--Start single accordion box-->
+                    <div class="accordion accordion-block">
+                        <div class="accord-btn"><span class="count"></span><h4>What is an Anti-charity?</h4></div>
+                        <div class="accord-content">
+                            <div class="text">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</div>
+                        </div>
+                    </div>
+                    <!--End single accordion box-->
+                    <!--Start single accordion box-->
+                    <div class="accordion accordion-block">
+                        <div class="accord-btn"><span class="count"></span><h4>Are donations to your recommended charities tax deductible?</h4></div>
+                        <div class="accord-content">
+                            <div class="text">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</div>
+                        </div>
+                    </div>
+                    <!--End single accordion box-->
+                    <!--Start single accordion box-->
+                    <div class="accordion accordion-block">
+                        <div class="accord-btn"><span class="count"></span><h4>Do all the charities on your list actually save lives?</h4></div>
+                        <div class="accord-content">
+                            <div class="text">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</div>
+                        </div>
+                    </div>
+                    <!--End single accordion box-->
+                    <!--Start single accordion box-->
+                    <div class="accordion accordion-block">
+                        <div class="accord-btn"><span class="count"></span><h4>Doesn't the government already give plenty of foreign aid?</h4></div>
+                        <div class="accord-content">
+                            <div class="text">We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue.</div>
+                        </div>
+                    </div>
+                    <!--End single accordion box-->
+                </div>    
+            </div>
+        </div>
+    </section>
+
+ {% endblock content %}
+
+
+<!-- JS -->
+{% block js_links %}
+{{ block.super }}
+<script src="{% static 'js/script.js' %}"></script>
+{% endblock js_links %}
+
